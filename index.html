@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Shop UA | Твій затишний куточок</title> 
-    <link rel="icon" type="image/png" href="logo.png">
+    <title>LOVE SHOP UA | Твій онлайн-магазин</title> 
+    <link class="rounded-full" rel="icon" type="image/png" href="logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -20,15 +20,18 @@
     </style>
 </head>
 <body class="bg-black text-gray-100 selection:bg-pink-500"> 
+    
+    <!-- Фонові великі пакети збоку замість сердець -->
     <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-        <div class="absolute -left-20 top-1/4 text-pink-500/20 animate-pulse">
-            <i class="fas fa-heart text-[20rem] blur-sm"></i>
+        <div class="absolute -left-20 top-1/4 text-emerald-500/10 animate-pulse">
+            <i class="fas fa-shopping-bag text-[20rem] blur-sm"></i>
         </div>
-        <div class="absolute -right-20 top-1/2 text-pink-500/20 animate-pulse" style="animation-delay: 1s;">
-            <i class="fas fa-heart text-[25rem] blur-sm"></i>
+        <div class="absolute -right-20 top-1/2 text-emerald-500/10 animate-pulse" style="animation-delay: 1s;">
+            <i class="fas fa-shopping-bag text-[25rem] blur-sm"></i>
         </div>
     </div>
 
+    <!-- Шапка сайту -->
     <header class="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-black tracking-tighter">
@@ -40,54 +43,59 @@
         </div>
     </header>
 
+    <!-- Головний банер -->
     <section class="py-16 px-6 text-center">
         <h2 class="text-4xl md:text-6xl font-extrabold mb-4 flex items-center justify-center gap-3 flex-wrap">
-    <i class="fas fa-heart text-pink-500 animate-pulse text-2xl md:text-4xl"></i>
-    <span>Краса та пристрасть в <span class="border-b-4 border-pink-500">Україні</span></span>
-    <i class="fas fa-heart text-pink-500 animate-pulse text-2xl md:text-4xl"></i>
-</h2>
-        <p class="text-gray-400 max-w-2xl mx-auto text-lg">Найкращі товари для твого настрою. Швидка доставка та повна анонімність.</p>
+            <i class="fas fa-shopping-bag text-emerald-500 animate-pulse text-2xl md:text-4xl"></i>
+            <span>Твій надійний <span class="border-b-4 border-emerald-500">онлайн-магазин</span></span>
+            <i class="fas fa-shopping-bag text-emerald-500 animate-pulse text-2xl md:text-4xl"></i>
+        </h2>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg">Найкращі товари для твого повсякденного життя. Швидка доставка, зручний сервіс та відмінна якість.</p>
     </section>
 
+    <!-- Вітрина товарів -->
     <main class="max-w-6xl mx-auto px-6 pb-20">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             
+            <!-- Товар 1 -->
             <div class="product-card bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
-                <img src="https://via.placeholder.com/400x300/1a1a1a/ff758c?text=Love+Shop+Item+1" alt="Товар" class="w-full h-64 object-cover">
+                <img src="https://via.placeholder.com/400x300/1a1a1a/10b981?text=Shop+Item+1" alt="Товар" class="w-full h-64 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Назва товару 1</h3>
                     <p class="text-gray-400 text-sm mb-4">Опис вашого товару. Додайте сюди переваги або характеристики.</p>
                     <div class="flex justify-between items-center">
-                        <span class="text-2xl font-black text-pink-500">750 ₴</span>
-                        <a href="https://t.me/justlove_shop_ua" class="bg-pink-600 hover:bg-pink-500 text-white px-6 py-2 rounded-full font-bold transition flex items-center gap-2">
+                        <span class="text-2xl font-black text-emerald-400">750 ₴</span>
+                        <a href="https://t.me/justlove_shop_ua" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-2 rounded-full font-bold transition flex items-center gap-2">
                             <i class="fa-solid fa-cart-shopping text-sm"></i> Замовити
                         </a>
                     </div>
                 </div>
             </div>
 
+            <!-- Товар 2 -->
             <div class="product-card bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
-                <img src="https://via.placeholder.com/400x300/1a1a1a/ff758c?text=Love+Shop+Item+2" alt="Товар" class="w-full h-64 object-cover">
+                <img src="https://via.placeholder.com/400x300/1a1a1a/10b981?text=Shop+Item+2" alt="Товар" class="w-full h-64 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Назва товару 2</h3>
                     <p class="text-gray-400 text-sm mb-4">Тільки найкраща якість для наших клієнтів в Україні.</p>
                     <div class="flex justify-between items-center">
-                        <span class="text-2xl font-black text-pink-500">1200 ₴</span>
-                        <a href="https://t.me/justlove_shop_ua" target="_blank" class="bg-pink-600 hover:bg-pink-500 text-white px-6 py-2 rounded-full font-bold transition flex items-center gap-2">
+                        <span class="text-2xl font-black text-emerald-400">1200 ₴</span>
+                        <a href="https://t.me/justlove_shop_ua" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-2 rounded-full font-bold transition flex items-center gap-2">
                             <i class="fa-solid fa-cart-shopping text-sm"></i> Замовити
                         </a>
                     </div>
                 </div>
             </div>
 
+            <!-- Товар 3 -->
             <div class="product-card bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
-                <img src="https://via.placeholder.com/400x300/1a1a1a/ff758c?text=Love+Shop+Item+3" alt="Товар" class="w-full h-64 object-cover">
+                <img src="https://via.placeholder.com/400x300/1a1a1a/10b981?text=Shop+Item+3" alt="Товар" class="w-full h-64 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Назва товару 3</h3>
                     <p class="text-gray-400 text-sm mb-4">Ексклюзивна пропозиція. Кількість обмежена.</p>
                     <div class="flex justify-between items-center">
-                        <span class="text-2xl font-black text-pink-500">490 ₴</span>
-                        <a href="https://t.me/justlove_shop_ua" class="bg-pink-600 hover:bg-pink-500 text-white px-6 py-2 rounded-full font-bold transition flex items-center gap-2">
+                        <span class="text-2xl font-black text-emerald-400">490 ₴</span>
+                        <a href="https://t.me/justlove_shop_ua" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-2 rounded-full font-bold transition flex items-center gap-2">
                             <i class="fa-solid fa-cart-shopping text-sm"></i> Замовити
                         </a>
                     </div>
@@ -97,6 +105,7 @@
         </div>
     </main>
 
+    <!-- Підвал -->
     <footer class="bg-gray-900 py-12 px-6 border-t border-gray-800 text-center">
         <div class="text-xl font-bold mb-4 gradient-text">LOVE SHOP UA</div>
         <p class="text-gray-500 text-sm">© 2026 Всі права захищені. Доставка по Україні.</p>
